@@ -52,6 +52,4 @@ node default {
     content => "Isn't this stuff fun?\n",
     mode => '0644',
   }  
-  include users
-  include skeleton
 }
