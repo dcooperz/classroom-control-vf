@@ -28,7 +28,7 @@ class nginx {
     ensure => directory,
     owner => 'root',
     group => 'root',
-    node => '0775',
+    mode => '0775',
   }
   file {'/etc/nginx/conf.d/default.conf':
     ensure => file,
