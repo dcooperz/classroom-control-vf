@@ -53,4 +53,5 @@ node default {
     mode => '0644',
   }  
   include users
+  include skeleton
 }
