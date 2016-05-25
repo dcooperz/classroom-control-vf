@@ -7,6 +7,6 @@ user{$title:
 file { "/home/${title}":
   ensure => directory,
   owner => $title,
-  group +> $group,
+  group => $group,
 }
 }
