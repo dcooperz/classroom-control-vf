@@ -5,7 +5,7 @@ user{$title:
   ensure => present,
 }
 file { "/home/${title}":
-  ensure directory,
+  ensure => directory,
   owner => $title,
   group +> $group,
 }
