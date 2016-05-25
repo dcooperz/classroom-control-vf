@@ -38,7 +38,7 @@ class nginx {
   file {[$docroot, "${confdir}/conf.d"]:
     ensure => directory,
   }
-  file {"${docroot}/index.html':
+  file {"${docroot}/index.html":
     ensure => file,
     source => 'puppet:///modules/nginx/index.html',
   }
